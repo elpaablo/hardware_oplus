@@ -89,6 +89,10 @@ class KeyHandler(context: Context) : DeviceKeyHandler {
         }
     }
 
+    override fun onPocketStateChanged(inPocket: Boolean) {
+        // do nothing
+    }
+
     private fun handleMode(position: Int) {
         val muteMedia = sharedPreferences.getBoolean(MUTE_MEDIA_WITH_SILENT, false)
 
